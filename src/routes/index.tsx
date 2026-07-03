@@ -342,14 +342,23 @@ function Index() {
       {/* COM FUNCIONA */}
       <section id="com-funciona" className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="mb-14 max-w-2xl">
-            <span className="font-mono-ticket text-[11px] uppercase tracking-[0.25em] text-vend-ink-soft">
-              Procés — 04 passos
-            </span>
-            <h2 className="mt-4 font-display text-4xl leading-[1] text-vend-ink md:text-6xl">
-              Del primer contacte a la
-              <em className="italic"> primera comissió.</em>
-            </h2>
+          <div className="mb-14 grid gap-10 md:grid-cols-[1.5fr_1fr] md:items-end md:gap-16">
+            <div className="max-w-2xl">
+              <span className="font-mono-ticket text-[11px] uppercase tracking-[0.25em] text-vend-ink-soft">
+                Procés — 04 passos
+              </span>
+              <h2 className="mt-4 font-display text-4xl leading-[1] text-vend-ink md:text-6xl">
+                Del primer contacte a la
+                <em className="italic"> primera comissió.</em>
+              </h2>
+            </div>
+            <div className="flex justify-center md:justify-end">
+              <img
+                src="/maquina-expenedora-1.png"
+                alt="Màquina expenedora VEN24 instal·lada"
+                className="h-64 w-auto drop-shadow-[0_20px_40px_rgba(28,29,33,0.25)] md:h-72"
+              />
+            </div>
           </div>
 
           <div className="grid gap-px overflow-hidden rounded-2xl border border-vend-line bg-vend-line md:grid-cols-4">
