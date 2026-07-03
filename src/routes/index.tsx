@@ -397,8 +397,6 @@ function Index() {
 
               <dl className="mt-10 space-y-4 border-t border-vend-cream/15 pt-8">
                 {[
-                  { k: "Telèfon", v: "+34 600 00 00 00" },
-                  { k: "Correu", v: "hola@vendbcn.cat" },
                   { k: "Zona", v: "Barcelona i àrea metropolitana" },
                 ].map((c) => (
                   <div key={c.k} className="grid grid-cols-[120px_1fr] items-baseline gap-4 border-b border-vend-cream/10 pb-4">
