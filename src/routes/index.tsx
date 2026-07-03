@@ -76,7 +76,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-vend-line bg-vend-bg/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
           <a href="#inici" className="flex items-center gap-2">
-            <img src="/logo-ven24.png" alt="VEN24" className="h-9 w-auto" />
+            <img src="/logo-ven24.png" alt="VEN24" className="h-14 w-auto" />
             <span className="font-mono-ticket text-[10px] uppercase tracking-[0.25em] text-vend-ink-soft">Barcelona</span>
           </a>
           <nav className="hidden items-center gap-7 lg:flex">
@@ -411,8 +411,8 @@ function Index() {
       <footer className="bg-vend-ink py-10 text-vend-cream/50">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 border-t border-vend-cream/10 px-4 pt-8 md:flex-row md:items-center md:px-8">
           <div className="flex items-center gap-2">
-            <span className="rounded-md bg-vend-cream px-2 py-1">
-              <img src="/logo-ven24.png" alt="VEN24" className="h-6 w-auto" />
+            <span className="rounded-md bg-vend-cream px-3 py-1.5">
+              <img src="/logo-ven24.png" alt="VEN24" className="h-9 w-auto" />
             </span>
             <span className="font-mono-ticket text-[10px] uppercase tracking-[0.25em]">Barcelona</span>
           </div>
