@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
-export type Lang = "ca" | "es";
+export type Lang = "es" | "en";
 
 const STORAGE_KEY = "ven24-lang";
 
@@ -78,153 +78,153 @@ export type Translation = {
 };
 
 export const translations: Record<Lang, Translation> = {
-  ca: {
+  en: {
     nav: [
-      { href: "#inici", label: "Inici" },
-      { href: "#avantatges", label: "Avantatges" },
-      { href: "#productes", label: "Productes" },
-      { href: "#cafe", label: "Cafè" },
-      { href: "#com-funciona", label: "Com funciona" },
-      { href: "#contacte", label: "Contacte" },
+      { href: "#inici", label: "Home" },
+      { href: "#avantatges", label: "Advantages" },
+      { href: "#productes", label: "Products" },
+      { href: "#cafe", label: "Coffee" },
+      { href: "#com-funciona", label: "How it works" },
+      { href: "#contacte", label: "Contact" },
     ],
     ticker: [
-      "Sense inversió",
-      "Servei 24 hores",
-      "Reposició inclosa",
-      "Comissió mensual",
-      "Instal·lació en 48h",
-      "Barcelona i àrea metropolitana",
+      "No investment",
+      "24-hour service",
+      "Restocking included",
+      "Monthly commission",
+      "Installation in 48h",
+      "Barcelona and metropolitan area",
     ],
     advantages: [
-      { n: "01", title: "Zero inversió inicial", text: "No pagueu res per la màquina, els productes ni la instal·lació. La col·loquem, i tot el manteniment corre pel nostre compte." },
-      { n: "02", title: "Ingressos passius mensuals", text: "Rebeu el 12% dels ingressos per vendes cada mes, transferit directament al vostre compte." },
-      { n: "03", title: "Servei 24 hores, 365 dies", text: "Els vostres hostes i socis tenen accés continuat, sense trencar la dinàmica del recinte." },
-      { n: "04", title: "Reposició i neteja incloses", text: "Un equip tècnic revisa el catàleg, reposa producte i manté la màquina impecable." },
-      { n: "05", title: "Instal·lació en 48 hores", text: "Des de la confirmació fins a la posada en marxa, en menys de dos dies." },
-      { n: "06", title: "Contracte breu i clar", text: "Un document senzill, sense permanències dissimulades ni lletra petita." },
+      { n: "01", title: "Zero initial investment", text: "You don't pay anything for the machine, the products, or the installation. We install it, and all maintenance is on us." },
+      { n: "02", title: "Monthly passive income", text: "You receive 12% of sales revenue every month, transferred directly to your account." },
+      { n: "03", title: "24-hour service, 365 days", text: "Your guests and members have continuous access, without disrupting your venue's routine." },
+      { n: "04", title: "Restocking and cleaning included", text: "A technical team checks the catalog, restocks products, and keeps the machine spotless." },
+      { n: "05", title: "Installation in 48 hours", text: "From confirmation to launch, in less than two days." },
+      { n: "06", title: "Short, clear contract", text: "A simple document, with no hidden commitments or small print." },
     ],
     mixes: [
       {
-        name: "Equilibri",
+        name: "Balance",
         accent: "mint",
         tag: "Wellness",
-        who: "Gimnasos, spas i clubs esportius",
-        items: ["Barretes proteiques", "Fruita seca", "Aigua i infusions", "Batuts", "Snacks integrals"],
+        who: "Gyms, spas and sports clubs",
+        items: ["Protein bars", "Nuts", "Water and infusions", "Smoothies", "Wholegrain snacks"],
       },
       {
-        name: "Confort",
+        name: "Comfort",
         accent: "yellow",
-        tag: "Clàssic",
-        who: "Hotels de ciutat, apart·hotels i hostals",
-        items: ["Xocolata i galetes", "Snacks salats", "Refrescos i sucs", "Aigua freda", "Dolços tradicionals"],
+        tag: "Classic",
+        who: "City hotels, aparthotels and hostels",
+        items: ["Chocolate and cookies", "Salty snacks", "Soft drinks and juices", "Cold water", "Traditional sweets"],
       },
       {
-        name: "Curat",
+        name: "Curated",
         accent: "red",
-        tag: "Selecció",
-        who: "Hotels boutique, coworkings premium",
-        items: ["Selecció artesana local", "Begudes sense sucre", "Snacks eco i sense gluten", "Aigua mineral premium", "Rotació estacional"],
+        tag: "Selection",
+        who: "Boutique hotels, premium coworkings",
+        items: ["Local artisan selection", "Sugar-free drinks", "Eco and gluten-free snacks", "Premium mineral water", "Seasonal rotation"],
       },
     ],
     steps: [
-      { n: "01", title: "Primer contacte", text: "Ens truqueu o ompliu el formulari. Us responem en menys de 24 hores." },
-      { n: "02", title: "Visita i proposta", text: "Analitzem l'espai, el flux de persones i us proposem la màquina i el catàleg adequats." },
-      { n: "03", title: "Instal·lació", text: "En menys de 48 hores la màquina queda muntada, connectada i plena." },
-      { n: "04", title: "Cobrament mensual", text: "Cada mes rebeu la vostra comissió al compte, amb un informe clar de vendes." },
+      { n: "01", title: "First contact", text: "Call us or fill in the form. We respond in under 24 hours." },
+      { n: "02", title: "Visit and proposal", text: "We assess the space, foot traffic, and propose the right machine and catalog." },
+      { n: "03", title: "Installation", text: "In under 48 hours the machine is set up, connected and stocked." },
+      { n: "04", title: "Monthly payout", text: "Every month you receive your commission in your account, with a clear sales report." },
     ],
-    header: { location: "Barcelona", cta: "Sol·licitar proposta" },
+    header: { location: "Barcelona", cta: "Request a proposal" },
     hero: {
-      eyebrow: "Vending per a qualsevol empresa",
-      h1: ["Poseu una màquina.", "Cobreu cada mes.", "Sense fer res més."],
+      eyebrow: "Vending for any business",
+      h1: ["Get a machine.", "Get paid every month.", "Without lifting a finger."],
       paragraph:
-        "Instal·lem, reposem i mantenim màquines expenedores a qualsevol empresa de Barcelona que tingui un espai per cedir. Vosaltres cediu l'espai, nosaltres ens encarreguem de la resta i cada mes rebeu el 12% dels ingressos al vostre compte.",
-      ctaPrimary: "Sol·licitar proposta",
-      ctaSecondary: "Veure el procés",
+        "We install, restock and maintain vending machines at any business in Barcelona with a space to spare. You provide the space, we take care of everything else, and every month you receive 12% of the revenue in your account.",
+      ctaPrimary: "Request a proposal",
+      ctaSecondary: "See how it works",
       stats: [
-        { k: "0€", v: "Inversió inicial" },
-        { k: "48h", v: "Instal·lació" },
-        { k: "24/7", v: "Disponibilitat" },
+        { k: "0€", v: "Initial investment" },
+        { k: "48h", v: "Installation" },
+        { k: "24/7", v: "Availability" },
       ],
     },
     advantagesSection: {
-      eyebrow: "Avantatges — 06",
-      title: "Un servei pensat per a espais que ja funcionen bé.",
+      eyebrow: "Advantages — 06",
+      title: "A service designed for spaces that already run well.",
       paragraph:
-        "Sabem que qualsevol empresa ja té les seves rutines. La nostra feina és sumar sense interferir: una màquina discreta, un catàleg cuidat i un cobrament recurrent.",
+        "We know any business already has its own routines. Our job is to add value without getting in the way: a discreet machine, a curated catalog and a recurring payout.",
     },
     productes: {
-      eyebrow: "Catàleg — 03 mescles",
-      title: ["Trieu el catàleg que", "encaixa amb el vostre públic."],
+      eyebrow: "Catalog — 03 mixes",
+      title: ["Choose the catalog that", "fits your audience."],
       paragraph:
-        "Cada màquina es configura amb un mix adaptat al vostre espai. Ajustem el percentatge i rotem el catàleg segons la demanda real.",
-      per: "Per a",
+        "Each machine is configured with a mix adapted to your space. We adjust the ratio and rotate the catalog based on real demand.",
+      per: "For",
       footnote:
-        "→ Cada empresa decideix el percentatge exacte de cada categoria. Rotem el catàleg segons què es ven més al vostre espai.",
+        "→ Each business decides the exact ratio of each category. We rotate the catalog based on what sells best in your space.",
     },
     cafe: {
-      eyebrow: "Cafè de màquina",
-      title: ["També ens ocupem del", "cafè."],
+      eyebrow: "Machine coffee",
+      title: ["We also take care of the", "coffee."],
       paragraph:
-        "La mateixa lògica: instal·lem la màquina, la mantenim i la reomplim. Vosaltres oferiu un cafè de qualitat als vostres hostes o socis i cobreu la vostra comissió cada mes.",
+        "Same logic: we install the machine, maintain it and refill it. You offer quality coffee to your guests or members and collect your commission every month.",
       list: [
-        "Cafè en gra, càpsula o soluble",
-        "Opcions amb llet, sucre i vasos inclosos",
-        "Manteniment i descalcificació preventiva",
-        "Adequada per a office, gimnàs o zona d'hostes",
+        "Bean, capsule or instant coffee",
+        "Options with milk, sugar and cups included",
+        "Maintenance and preventive descaling",
+        "Suited for offices, gyms or guest areas",
       ],
       card: {
-        label: "Cafè · VEN24",
+        label: "Coffee · VEN24",
         drink: "Espresso.",
-        subtitle: "Selecció barrejada · torradors de Barcelona",
-        options: ["Espresso", "Tallat", "Americà"],
+        subtitle: "Blended selection · Barcelona roasters",
+        options: ["Espresso", "Cortado", "Americano"],
       },
     },
     comFunciona: {
-      eyebrow: "Procés — 04 passos",
-      title: ["Del primer contacte a la", "primera comissió."],
+      eyebrow: "Process — 04 steps",
+      title: ["From first contact to your", "first commission."],
     },
     contacte: {
-      eyebrow: "Contacte",
-      title: ["El vostre espai es mereix una màquina.", "I una comissió cada mes."],
+      eyebrow: "Contact",
+      title: ["Your space deserves a machine.", "And a commission every month."],
       paragraph:
-        "Responem en menys de 24 hores amb una proposta clara, adaptada al vostre espai i al vostre públic.",
-      zonaLabel: "Zona",
-      zonaValue: "Barcelona i àrea metropolitana",
+        "We respond in under 24 hours with a clear proposal, tailored to your space and your audience.",
+      zonaLabel: "Area",
+      zonaValue: "Barcelona and metropolitan area",
     },
     footer: { location: "Barcelona" },
     form: {
-      label: "Sol·licitud",
-      status: "● Resposta en 24h",
+      label: "Request",
+      status: "● Response within 24h",
       placeholders: {
-        nom: "Nom",
-        empresa: "Nom de l'empresa",
-        correu: "Correu",
-        telefon: "Telèfon",
-        missatge: "Expliqueu-nos l'espai: tipus d'establiment, ubicació, nombre d'usuaris...",
+        nom: "Name",
+        empresa: "Company name",
+        correu: "Email",
+        telefon: "Phone",
+        missatge: "Tell us about the space: type of venue, location, number of users...",
       },
-      submit: "Enviar sol·licitud",
-      note: "En enviar, s'obre el vostre client de correu amb el missatge preparat.",
-      mailtoLabels: { nom: "Nom", empresa: "Empresa", email: "Email", telefon: "Telèfon" },
-      subjectPrefix: "Sol·licitud de màquina — ",
+      submit: "Send request",
+      note: "When you submit, your email client opens with the message ready to send.",
+      mailtoLabels: { nom: "Name", empresa: "Company", email: "Email", telefon: "Phone" },
+      subjectPrefix: "Machine request — ",
     },
     vendingMachine: {
       brand: "Vend·BCN 3000",
-      serie: "Sèrie 04",
+      serie: "Series 04",
       slots: [
-        { code: "A1", title: "Zero inversió", detail: "No pagues res per la màquina, els productes ni la instal·lació.", accent: "yellow", icon: "€" },
-        { code: "A2", title: "Comissió mensual", detail: "Cada mes ingresses el 12% de les vendes, sense mínims.", accent: "red", icon: "%" },
-        { code: "A3", title: "Servei 24 hores", detail: "Disponible per als vostres hostes i clients les 24h, tots els dies.", accent: "yellow", icon: "24" },
-        { code: "B1", title: "Reposició inclosa", detail: "L'equip s'encarrega que sempre estigui plena i operativa.", accent: "mint", icon: "↻" },
-        { code: "B2", title: "Instal·lació en 48h", detail: "En menys de 48 hores queda muntada i funcionant al vostre espai.", accent: "red", icon: "→" },
-        { code: "B3", title: "Neteja i manteniment", detail: "Tècnics acreditats revisen, netegen i mantenen l'equip.", accent: "mint", icon: "✦" },
-        { code: "C1", title: "Mix personalitzat", detail: "Trieu el catàleg: saludable, clàssic o una mescla ajustada al vostre públic.", accent: "ink", icon: "★" },
-        { code: "C2", title: "Contracte clar", detail: "Un document breu, sense lletra petita ni permanències dissimulades.", accent: "yellow", icon: "✎" },
-        { code: "C3", title: "Cafè disponible", detail: "També disposem de màquines de cafè amb les mateixes condicions.", accent: "coffee", icon: "☕" },
+        { code: "A1", title: "Zero investment", detail: "You don't pay anything for the machine, the products, or the installation.", accent: "yellow", icon: "€" },
+        { code: "A2", title: "Monthly commission", detail: "Every month you earn 12% of sales, no minimums.", accent: "red", icon: "%" },
+        { code: "A3", title: "24-hour service", detail: "Available to your guests and customers 24h, every day.", accent: "yellow", icon: "24" },
+        { code: "B1", title: "Restocking included", detail: "The team makes sure it's always full and working.", accent: "mint", icon: "↻" },
+        { code: "B2", title: "Installation in 48h", detail: "In under 48 hours it's set up and running in your space.", accent: "red", icon: "→" },
+        { code: "B3", title: "Cleaning and maintenance", detail: "Certified technicians check, clean and maintain the equipment.", accent: "mint", icon: "✦" },
+        { code: "C1", title: "Custom mix", detail: "Choose the catalog: healthy, classic, or a mix tailored to your audience.", accent: "ink", icon: "★" },
+        { code: "C2", title: "Clear contract", detail: "A short document, with no small print or hidden commitments.", accent: "yellow", icon: "✎" },
+        { code: "C3", title: "Coffee available", detail: "We also offer coffee machines under the same terms.", accent: "coffee", icon: "☕" },
       ],
-      dropLabel: "Retirar producte",
-      codeLabel: "Codi",
-      chooseCode: "Trieu un codi...",
-      caption: "Piqueu un codi · o toqueu un slot",
+      dropLabel: "Collect item",
+      codeLabel: "Code",
+      chooseCode: "Choose a code...",
+      caption: "Enter a code · or tap a slot",
     },
   },
   es: {
@@ -387,11 +387,11 @@ type LanguageContextValue = {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("ca");
+  const [lang, setLangState] = useState<Lang>("es");
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "ca" || stored === "es") setLangState(stored);
+    if (stored === "es" || stored === "en") setLangState(stored);
   }, []);
 
   useEffect(() => {

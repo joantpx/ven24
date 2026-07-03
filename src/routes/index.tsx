@@ -29,8 +29,8 @@ function LanguageToggle() {
   );
   return (
     <div className="flex items-center gap-1 rounded-full border border-vend-line p-0.5 font-mono-ticket text-[10px] uppercase tracking-[0.15em]">
-      {option("ca", "CA")}
       {option("es", "ES")}
+      {option("en", "EN")}
     </div>
   );
 }
