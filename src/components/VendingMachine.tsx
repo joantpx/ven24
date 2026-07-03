@@ -10,7 +10,7 @@ type Slot = {
 
 const SLOTS: Slot[] = [
   { code: "A1", title: "Zero inversió", detail: "No pagues res per la màquina, els productes ni la instal·lació.", accent: "yellow", icon: "€" },
-  { code: "A2", title: "Comissió mensual", detail: "Cada mes ingresses la teva part de les vendes, sense mínims.", accent: "red", icon: "%" },
+  { code: "A2", title: "Comissió mensual", detail: "Cada mes ingresses el 12% de les vendes, sense mínims.", accent: "red", icon: "%" },
   { code: "A3", title: "Servei 24 hores", detail: "Disponible per als vostres hostes i clients les 24h, tots els dies.", accent: "yellow", icon: "24" },
   { code: "B1", title: "Reposició inclosa", detail: "L'equip s'encarrega que sempre estigui plena i operativa.", accent: "mint", icon: "↻" },
   { code: "B2", title: "Instal·lació en 48h", detail: "En menys de 48 hores queda muntada i funcionant al vostre espai.", accent: "red", icon: "→" },

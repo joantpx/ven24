@@ -25,7 +25,7 @@ const TICKER = [
 
 const ADVANTAGES = [
   { n: "01", title: "Zero inversió inicial", text: "No pagueu res per la màquina, els productes ni la instal·lació. La col·loquem, i tot el manteniment corre pel nostre compte." },
-  { n: "02", title: "Ingressos passius mensuals", text: "Rebeu una comissió sobre les vendes cada mes, transferida directament al vostre compte." },
+  { n: "02", title: "Ingressos passius mensuals", text: "Rebeu el 12% dels ingressos per vendes cada mes, transferit directament al vostre compte." },
   { n: "03", title: "Servei 24 hores, 365 dies", text: "Els vostres hostes i socis tenen accés continuat, sense trencar la dinàmica del recinte." },
   { n: "04", title: "Reposició i neteja incloses", text: "Un equip tècnic revisa el catàleg, reposa producte i manté la màquina impecable." },
   { n: "05", title: "Instal·lació en 48 hores", text: "Des de la confirmació fins a la posada en marxa, en menys de dos dies." },
@@ -121,7 +121,7 @@ function Index() {
             <div className="flex items-center gap-3">
               <span className="h-px w-10 bg-vend-ink" />
               <span className="font-mono-ticket text-[11px] uppercase tracking-[0.25em] text-vend-ink-soft">
-                Vending per a hotels i gimnasos
+                Vending per a qualsevol empresa
               </span>
             </div>
             <h1 className="mt-8 font-display text-[3.5rem] leading-[0.95] tracking-tight text-vend-ink md:text-7xl lg:text-[6rem]">
@@ -132,10 +132,10 @@ function Index() {
               Sense fer res més.
             </h1>
             <p className="mt-8 max-w-lg text-lg leading-relaxed text-vend-ink-soft">
-              Instal·lem, reposem i mantenim màquines expenedores a hotels,
-              gimnasos i centres de treball de Barcelona. Vosaltres cediu
-              l'espai, nosaltres ens encarreguem de la resta i cada mes rebeu
-              la vostra comissió al compte.
+              Instal·lem, reposem i mantenim màquines expenedores a qualsevol
+              empresa de Barcelona que tingui un espai per cedir. Vosaltres
+              cediu l'espai, nosaltres ens encarreguem de la resta i cada mes
+              rebeu el 12% dels ingressos al vostre compte.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
@@ -185,7 +185,7 @@ function Index() {
                 Un servei pensat per a espais que ja funcionen bé.
               </h2>
               <p className="mt-6 text-vend-ink-soft">
-                Sabem que un hotel o un gimnàs ja té les seves rutines. La nostra feina
+                Sabem que qualsevol empresa ja té les seves rutines. La nostra feina
                 és sumar sense interferir: una màquina discreta, un catàleg cuidat i
                 un cobrament recurrent.
               </p>
